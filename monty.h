@@ -61,9 +61,6 @@ typedef struct arg_s
 	instruction_t *instruction;
 } arg_t;
 
-int dprintf(int fd, const char *format, ...);
-ssize_t getline(char **lineptr, size_t *n, FILE *stream);
-FILE *fdopen(int fd, const char *mode);
 
 extern arg_t *arguments;
 void validate_arguments(int argc);
